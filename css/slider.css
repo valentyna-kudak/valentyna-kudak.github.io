@@ -1,0 +1,117 @@
+.slider-wrapper {
+    padding: 0;
+    }
+
+.carousel {
+    display:flex;
+    align-items: center;
+    padding: 0;
+    margin-top: 80px;
+    }
+
+/*
+.carousel h2 {
+    color: darkorange;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+*/
+
+.carousel h3 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.color1{
+    color: darkorange;
+}
+
+.color2{
+    color: blue;
+}
+
+.color3{
+    color: forestgreen;
+}
+
+/*
+.carousel h4 {
+    color: forestgreen;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+*/
+
+.carousel .carousel-item {
+    min-height: 90vh;
+    background-position: left center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#slide1 {
+    background-image: url(../img/slider1_bg.jpg);
+}
+
+#slide2 {
+    background-image: url(../img/slider2_bg.jpg);
+}
+#slide3 {
+    background-image: url(../img/slider3_bg.jpg);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #444;
+    max-width: 48px;
+    max-height: 48px;
+    top: 50%;
+    margin-top:-24px;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: deeppink;
+}
+
+.carousel-control-prev {
+    border-radius: 0 50% 50% 0;
+}
+
+.carousel-control-next {
+    border-radius: 50% 0 0 50%;
+}
+
+.carousel-indicators li {
+    background-color: #ccc;
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    margin: 0 15px 0 15px;
+    border-radius: 50%;
+}
+
+.carousel-indicators li.active,
+.carousel-indicators li:hover {
+    background-color: deeppink;
+}
+
+.carousel-caption {
+    top:0;
+    bottom:0;
+    color: #111;
+    text-align: left;
+}
+
+
+/* Для екранів шириною менше 767px */
+/* мінімальна висота слайдера      */
+/* рівну висоті viewport 100vh     */
+
+
+@media screen and (max-width:767px) {
+    
+    .carousel h2 {
+        font-size: 1.5rem;
+    }
+}
